@@ -1,0 +1,47 @@
+.slogan {
+  width: 50%;
+}
+.slogan span {
+  color: red;
+}
+.image__hero {
+  width: 50%;
+}
+.image__hero img {
+  width: 100%;
+  height: auto;
+}
+.des {
+  line-height: 2rem;
+}
+.btnbar__order {
+  background-color: red;
+  color: aliceblue;
+  margin-right: 30px;
+}
+.btnbar__seeAllFood {
+  color: red;
+}
+.btnbar {
+  margin: 20px 0;
+}
+.commit {
+  display: flex;
+  align-items: center;
+}
+.commit__item {
+  display: flex;
+  align-items: center;
+}
+.commit__span {
+  font-size: 0.8rem;
+  color: rgba(228, 0, 0, 0.803) !important;
+  margin: 0 10px;
+}
+.commit__icon {
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+}

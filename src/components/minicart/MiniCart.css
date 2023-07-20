@@ -1,0 +1,21 @@
+.mini__cart {
+  height: 80vh;
+  width: 260px;
+  position: absolute;
+  background-color: black;
+  top: 35px;
+  right: -5px;
+  z-index: 99999999;
+  background-color: white;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.914);
+}
+.mini__cart::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: -25px;
+  border-width: 12px 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(240, 184, 184, 0.455) transparent;
+}

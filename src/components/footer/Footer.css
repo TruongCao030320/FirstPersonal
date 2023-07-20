@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgba(255, 192, 203, 0.493);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px 0 0 0;
+}
+.time {
+  line-height: 2rem;
+}
+.contact {
+  line-height: 2rem;
+}
+.newsletter__input {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.newsletter__input input {
+  border: none;
+  background-color: #ffe0e5;
+  outline: none;
+}
+.newsletter p {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.contact div:nth-child(2) {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.534);
+}
+.time div:nth-child(3),
+.time div:nth-child(5) {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.534);
+}
+.time div:nth-child(2),
+.time div:nth-child(4) {
+  font-size: 1rem;
+}

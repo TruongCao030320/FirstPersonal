@@ -1,0 +1,38 @@
+.popular-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular-navbar {
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+}
+.popular-navbar-list {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-item.active p {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: red;
+}
+.navbar-item p {
+  margin: 5px;
+  color: aliceblue;
+}
+.navbar-icon {
+  color: beige;
+}

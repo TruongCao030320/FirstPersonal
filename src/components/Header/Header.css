@@ -1,0 +1,64 @@
+.navbar__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navbar__title:hover {
+  filter: drop-shadow(0 10px 2px rgba(255, 0, 0, 0.548));
+}
+.restaurant-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.logo__img {
+  width: 70px;
+  height: 50px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #0000006c;
+  width: 100%;
+}
+.navbar__list a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 30px;
+  font-weight: 500;
+}
+.icon {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999999999;
+}
+.active {
+  color: #df202089 !important;
+}
+.cart__icon {
+  display: flex;
+}
+.cart__icon-cart {
+  position: relative;
+}
+.number {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+  font-size: 0.5rem;
+  color: red;
+  background-color: beige;
+  border-radius: 100px;
+  padding: 5px;
+}

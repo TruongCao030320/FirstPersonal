@@ -1,0 +1,27 @@
+.testimonial__wrapper {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+}
+.testimonial__content {
+  width: 50%;
+}
+.testimonial__img {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.slider {
+  border-radius: 20px;
+}
+.slider__item {
+  border-radius: 20px;
+}
+.w-100 {
+  width: 100%;
+}
+.testimonial__network {
+  width: 100%;
+}
