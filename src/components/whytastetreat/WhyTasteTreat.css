@@ -7,6 +7,9 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+.why-logo img {
+  width: 400px;
+}
 .why-title span {
   color: red;
 }
@@ -16,4 +19,17 @@
   margin-top: 20px;
   line-height: 0.8rem;
   border-radius: 5px;
+}
+.why-list-title {
+  font-weight: 600;
+}
+.paragraph {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: rgba(128, 128, 128, 0.5);
+}
+@media screen and (max-width: 739px) {
+  .why-logo img {
+    display: none;
+  }
 }

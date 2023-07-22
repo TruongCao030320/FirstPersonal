@@ -14,10 +14,7 @@ const Contact = () => {
             <label htmlFor="">Password</label>
             <input />
           </div>
-          <div className="contact-item">
-            <label htmlFor="">Phone number</label>
-            <input />
-          </div>
+
           <div className="contact-item">
             <label htmlFor="">Feedback</label>
             <textarea />

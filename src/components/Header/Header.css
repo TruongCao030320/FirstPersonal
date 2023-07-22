@@ -62,3 +62,123 @@
   border-radius: 100px;
   padding: 5px;
 }
+.cart__icon-mobile {
+  display: none;
+}
+@media screen and (max-width: 739px) and (min-width: 360px) {
+  .header {
+    display: none;
+  }
+  .cart__icon-mobile {
+    display: flex !important;
+    /* background-color: black; */
+    justify-content: flex-end;
+    position: relative;
+  }
+  .overlay-mobile {
+    background-color: rgba(0, 0, 0, 0.232);
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+    z-index: 8888;
+    top: -10px;
+    bottom: 0;
+    left: -50px;
+  }
+  .navbar-mobile {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: -10px;
+    z-index: 9999;
+    display: none;
+  }
+  .navbar-mobile-active {
+    display: block;
+    position: absolute;
+    right: 100px;
+    z-index: 99999;
+    background-color: white;
+  }
+  .navbar__list-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    line-height: 3rem;
+    height: 100vh;
+    position: absolute;
+    right: -110px;
+    top: -10px;
+    background-color: white;
+  }
+  .navlink__mobile {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    cursor: none;
+  }
+  .icon-mobile {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .header {
+    display: none;
+  }
+  .cart__icon-mobile {
+    display: flex !important;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .overlay-mobile {
+    background-color: rgba(0, 0, 0, 0.232);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8888;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+  }
+  .navbar-mobile {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: -10px;
+    z-index: 9999;
+    display: none;
+  }
+  .navbar-mobile-active {
+    display: block;
+    position: absolute;
+    right: 100px;
+    z-index: 99999;
+    background-color: white;
+  }
+  .navbar__list-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    line-height: 3rem;
+    height: 100vh;
+    position: absolute;
+    right: -110px;
+    top: -10px;
+    background-color: white;
+  }
+  .navlink__mobile {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    cursor: none;
+  }
+  .icon-mobile {
+    font-size: 24px;
+  }
+}

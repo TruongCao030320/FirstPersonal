@@ -9,8 +9,8 @@ const ItemBlock = (props) => {
         <img
           src={image}
           alt=""
-          width="160"
-          height="170"
+          width="120"
+          height="120"
           className="item__image-block-hover"
           style={{ cursor: "pointer" }}
         />

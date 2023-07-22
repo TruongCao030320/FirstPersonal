@@ -18,12 +18,12 @@ const WhatWeServe = () => {
           <h4 style={{ color: "red" }}>What we serve</h4>
           <h1
             style={{
-              width: "50%",
+              width: "60%",
               textAlign: "center",
             }}
           >
-            Just sit back at home we will{" "}
-            <span style={{ color: "red" }}>take care</span>
+            Just sit back at home we will
+            <span style={{ color: "red", marginLeft: 10 }}>take care</span>
           </h1>
           <div className="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -42,7 +42,7 @@ const WhatWeServe = () => {
           </div>
           <div className="features__item">
             <FontAwesomeIcon icon={faBowlFood} className="features-icon" />
-            <div className="features-title">Quick delivery</div>
+            <div className="features-title">Fresh food</div>
             <p className="features-paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Assumenda, odio.
@@ -50,7 +50,7 @@ const WhatWeServe = () => {
           </div>
           <div className="features__item">
             <FontAwesomeIcon icon={faFireBurner} className="features-icon" />
-            <div className="features-title">Quick delivery</div>
+            <div className="features-title">Clean</div>
             <p className="features-paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Assumenda, odio.

@@ -45,7 +45,7 @@ const Food = () => {
         <Container>
           <Row>
             {currentProducts.map((item, index) => (
-              <Col lg={6} md={6} sm={12}>
+              <Col lg={6} md={12} sm={12}>
                 <FoodCart foodItem={item} />
               </Col>
             ))}

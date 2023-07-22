@@ -39,3 +39,25 @@
   font-size: 0.8rem;
   color: rgb(193, 193, 193);
 }
+@media screen and (max-width: 739px) {
+  .features-icon {
+    font-size: 2rem;
+  }
+  .features-title {
+    font-size: 0.8rem;
+  }
+  .features-paragraph {
+    display: none;
+  }
+  .features {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+  .p {
+    display: none;
+    font-size: 0.8rem;
+    color: rgba(128, 128, 128, 0.508);
+  }
+}

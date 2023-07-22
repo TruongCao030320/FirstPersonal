@@ -21,8 +21,8 @@ const WhyTasteTreat = () => {
             <ul>
               <li>
                 <div className="why-list-item">
-                  <h3>Fresh and tasty foods</h3>
-                  <p>
+                  <h5 className="why-list-title">Fresh and tasty foods</h5>
+                  <p className="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Soluta, ad?
                   </p>
@@ -30,8 +30,8 @@ const WhyTasteTreat = () => {
               </li>
               <li>
                 <div className="why-list-item">
-                  <h3>Quality support</h3>
-                  <p>
+                  <h5 className="why-list-title">Quality support</h5>
+                  <p className="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Soluta, ad?
                   </p>
@@ -39,8 +39,8 @@ const WhyTasteTreat = () => {
               </li>
               <li>
                 <div className="why-list-item">
-                  <h3>Order from any location</h3>
-                  <p>
+                  <h5 className="why-list-title">Order from any location</h5>
+                  <p className="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Soluta, ad?
                   </p>

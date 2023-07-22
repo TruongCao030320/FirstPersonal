@@ -1,5 +1,6 @@
 .item__block {
-  min-width: 250px;
+  min-width: 220px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +19,7 @@
 }
 .item__name {
   margin: 10px 0;
+  font-size: 0.8rem;
 }
 .addToCart {
   width: 100%;
@@ -27,10 +29,12 @@
 }
 .addToCart__money {
   color: red;
+  font-size: 0.8rem;
 }
 .addToCart__btn {
   background-color: red;
   padding: 8px;
   color: white;
   border-radius: 10px;
+  font-size: 0.8rem;
 }

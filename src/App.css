@@ -23,3 +23,11 @@
   cursor: pointer;
   opacity: 0.5;
 }
+@media screen and (max-width: 739px) {
+  /* Add the specific CSS property you want to apply */
+  .container {
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+  }
+}

@@ -25,3 +25,11 @@
 .testimonial__network {
   width: 100%;
 }
+@media screen and (max-width: 739px) {
+  .testimonial__network {
+    display: none;
+  }
+  .testimonial__content {
+    width: 100%;
+  }
+}

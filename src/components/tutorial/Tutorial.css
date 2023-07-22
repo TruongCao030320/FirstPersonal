@@ -45,3 +45,11 @@
   color: white;
   background-color: red;
 }
+@media screen and (max-width: 739px) {
+  .image__hero {
+    display: none;
+  }
+  .btnbar {
+    display: none;
+  }
+}

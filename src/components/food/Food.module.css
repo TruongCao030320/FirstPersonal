@@ -78,3 +78,27 @@
 .item__content {
   width: 60%;
 }
+@media screen and (max-width: 739px) {
+  .food {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    padding: 50px 200px;
+    margin-bottom: 10px;
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .food {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    min-height: 600px;
+  }
+}

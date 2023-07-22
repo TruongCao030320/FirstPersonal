@@ -10,7 +10,7 @@
 }
 .contact-wrapper {
   background: transparent;
-  width: 35%;
+  width: 50%;
   padding: 60px;
   border-radius: 10px;
   box-shadow: 0 0 10px black;
@@ -33,4 +33,14 @@
 .contact-item textarea {
   height: 100px;
   box-shadow: 0 0 5px salmon;
+}
+@media screen and (max-width: 739px) {
+  .contact-wrapper {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+  }
 }

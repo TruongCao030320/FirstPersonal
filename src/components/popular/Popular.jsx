@@ -40,7 +40,7 @@ const Popular = () => {
         <Container>
           <Row>
             {products.map((item, index) => (
-              <Col lg={3} className="mb-4">
+              <Col lg={3} md={6} sm={12} className="mb-4">
                 <ItemBlock
                   image={item.image01}
                   name={item.title}
