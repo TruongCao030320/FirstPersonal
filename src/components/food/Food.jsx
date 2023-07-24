@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import products from "../../assets/fake-data/products";
 import Pagination from "../pagination/Pagination";
 import FoodCart from "./FoodCart";
+
 const Food = () => {
   const newProducts = products;
   const [currentPage, setCurrentPage] = useState(1);
@@ -15,6 +16,7 @@ const Food = () => {
   const lastProductIndex = currentPage * foodPerPage;
   const firstPostIndex = lastProductIndex - foodPerPage;
   const currentProducts = data.slice(firstPostIndex, lastProductIndex);
+
   return (
     <div className="container">
       <div className={styles.special__menu}>

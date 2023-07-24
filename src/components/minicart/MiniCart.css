@@ -19,3 +19,17 @@
   border-style: solid;
   border-color: transparent transparent rgba(240, 184, 184, 0.455) transparent;
 }
+.mini__cart-scroll {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow-y: scroll;
+}
+.mini__cart-scroll-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+}

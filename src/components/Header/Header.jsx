@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import logo from "../../assets/images/Food-Logo-Graphics-1-71-580x386.jpg";
 import "../Header/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -46,6 +46,7 @@ const Header = () => {
     dispatch(toggleNavbarMobile());
   };
   const navbarMobile = useSelector((state) => state.mobile.mobile);
+  const quantity = useSelector((state) => state.shopping.quantity);
   return (
     <div className="container">
       <div className="header">
@@ -77,7 +78,7 @@ const Header = () => {
               className="icon toggle"
               onClick={handleToggleCart}
             />
-            <div className="number">2</div>
+            <div className="number">{quantity}</div>
             <MiniCart />
           </div>
         </div>

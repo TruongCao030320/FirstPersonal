@@ -29,6 +29,9 @@
   padding: 10px;
   box-shadow: 1px 1px 10px #0000006c;
   width: 100%;
+  top: 0;
+  z-index: 99999;
+  background-color: white;
 }
 .navbar__list a {
   font-size: 1rem;
