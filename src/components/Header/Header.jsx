@@ -8,7 +8,7 @@ import {
   faClose,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MiniCart from "../minicart/MiniCart";
 import { useDispatch } from "react-redux";
 import { toggleMiniCart } from "../../store/cartSlice";
@@ -69,9 +69,11 @@ const Header = () => {
           </div>
         </div>
         <div className="cart__icon">
-          <div className="cart__icon-user">
-            <FontAwesomeIcon icon={faUser} className="icon" />
-          </div>
+          <Link to="/login" style={{ color: "black" }}>
+            <div className="cart__icon-user">
+              <FontAwesomeIcon icon={faUser} className="icon" />
+            </div>
+          </Link>
           <div className="cart__icon-cart">
             <FontAwesomeIcon
               icon={faCartShopping}
@@ -104,9 +106,15 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="cart__icon-user">
-          <FontAwesomeIcon icon={faUser} className="icon" />
-        </div>
+        <Link to="/login">
+          <div
+            className="cart__icon-user"
+            style={{ backgroundColor: "black", padding: 20 }}
+          >
+            <FontAwesomeIcon icon={faUser} className="icon" size="50px" />
+          </div>
+        </Link>
+
         <div className="cart__icon-cart">
           <FontAwesomeIcon
             icon={faCartShopping}

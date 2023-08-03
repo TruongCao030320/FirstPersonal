@@ -37,4 +37,15 @@
   color: white;
   border-radius: 10px;
   font-size: 0.8rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.718);
+  animation: addToCart ease-in 1s infinite;
+}
+@keyframes addToCart {
+  from {
+    box-shadow: 0 0 10px rgba(200, 8, 8, 0.723);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(200, 8, 8, 0.723);
+  }
 }
