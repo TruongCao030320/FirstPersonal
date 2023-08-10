@@ -13,6 +13,7 @@ import LayOut from "./components/layout/LayOut";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
+import Toast from "./components/toast/Toast";
 function App() {
   return (
     <BrowserRouter>

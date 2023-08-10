@@ -11,7 +11,7 @@ import FoodCart from "./FoodCart";
 const Food = () => {
   const newProducts = products;
   const [currentPage, setCurrentPage] = useState(1);
-  const [foodPerPage, setFoodPerPage] = useState(4);
+  const [foodPerPage, setFoodPerPage] = useState(6);
   const [data, setData] = useState(products);
   const lastProductIndex = currentPage * foodPerPage;
   const firstPostIndex = lastProductIndex - foodPerPage;

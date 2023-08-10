@@ -17,6 +17,7 @@ const MiniCart = () => {
           <div className="mini__cart-scroll-bottom">
             Total quantity: {quantity}
           </div>
+          <div className="miniCart-checkout-btn">Check out</div>
         </div>
       ) : (
         ""

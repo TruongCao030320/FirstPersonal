@@ -1,0 +1,122 @@
+.paying {
+  height: 100vh;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.paying-infor {
+  width: 60%;
+  border: 1px solid green;
+  padding: 20px;
+  height: 100%;
+  background-color: rgba(181, 181, 181, 0.188);
+  border-radius: 20px;
+  box-shadow: 0 0 2px black;
+}
+.paying-cost {
+  width: 30%;
+  height: 50%;
+  border: 1px solid black;
+  background-color: rgba(181, 181, 181, 0.188);
+  border-radius: 20px;
+  box-shadow: 0 0 2px black;
+  position: relative;
+}
+.paying-cost label {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.form-item:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-item label {
+  margin: 10px;
+}
+.form-item input {
+  height: 50%;
+  border-radius: 5px;
+}
+.form-item textarea {
+  border: 2px solid black;
+  border-radius: 5px;
+  min-height: 100px;
+}
+.form-item-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.infor-btn {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.infor-btn button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 2, 2, 0.237);
+}
+.infor-btn button:hover {
+  box-shadow: 0 0 5px rgb(93, 206, 93);
+}
+.product {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.totalPrice {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .paying-infor {
+    width: 60%;
+    border: 1px solid green;
+    padding: 20px;
+    height: 50%;
+    background-color: rgba(181, 181, 181, 0.188);
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+  }
+  .paying-cost {
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    background-color: rgba(181, 181, 181, 0.188);
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+    position: relative;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  .paying-infor {
+    width: 60%;
+    border: 1px solid green;
+    padding: 20px;
+    height: 62%;
+    background-color: rgba(181, 181, 181, 0.188);
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+  }
+  .paying-cost {
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    background-color: rgba(181, 181, 181, 0.188);
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+    position: relative;
+  }
+}

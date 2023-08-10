@@ -1,3 +1,14 @@
 .table-wrapper {
   height: 100vh;
 }
+.checkout-btn button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black !important;
+}
+.checkout-btn button:hover {
+  box-shadow: 0 0 10px red;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}

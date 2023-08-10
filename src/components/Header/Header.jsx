@@ -14,6 +14,7 @@ import { useDispatch } from "react-redux";
 import { toggleMiniCart } from "../../store/cartSlice";
 import { toggleNavbarMobile } from "../../store/mobileSlice";
 import { useSelector } from "react-redux";
+import { Toast } from "react-bootstrap";
 const Header = () => {
   const array = [
     {
@@ -107,10 +108,7 @@ const Header = () => {
           </div>
         </div>
         <Link to="/login">
-          <div
-            className="cart__icon-user"
-            style={{ backgroundColor: "black", padding: 20 }}
-          >
+          <div className="cart__icon-user" style={{ color: "black" }}>
             <FontAwesomeIcon icon={faUser} className="icon" size="50px" />
           </div>
         </Link>

@@ -10,6 +10,7 @@ import {
   faDeleteLeft,
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const BigCart = () => {
   const columns = [
     {
@@ -50,38 +51,18 @@ const BigCart = () => {
   const handleDeleteItem = (id) => {
     dispatch(deleteItem(id));
   };
-
-  // const dataSource = [
-  //   {
-  //     key: "1",
-  //     name: "Mike",
-  //     age: 32,
-  //     address: "10 Downing Street",
-  //   },
-  //   {
-  //     key: "2",
-  //     name: "John",
-  //     age: 42,
-  //     address: "10 Downing Street",
-  //   },
-  //   {
-  //     key: "2",
-  //     name: "John",
-  //     age: 42,
-  //     address: "10 Downing Street",
-  //   },
-  //   {
-  //     key: "2",
-  //     name: "John",
-  //     age: 42,
-  //     address: "10 Downing Street",
-  //   },
-  // ];
   const dataSource = useSelector((state) => state.shopping.item);
   return (
     <div className="container">
       <div className="table-wrapper">
         <Table dataSource={dataSource} columns={columns} />
+        <div className="checkout-btn">
+          <button>
+            <Link to="/paying" style={{ textDecoration: "none" }}>
+              Check out
+            </Link>
+          </button>
+        </div>
       </div>
     </div>
   );

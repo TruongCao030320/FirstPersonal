@@ -1,0 +1,139 @@
+.toast1 {
+  width: 350px;
+  height: 250px;
+  border: 1px solid pink;
+  border-radius: 20px;
+  display: block;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px grey;
+  animation: fadeOut 0.5s ease-in-out, disapear 4s ease-in-out forwards;
+}
+@keyframes fadeOut {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes disapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.toast-wrapper {
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toast-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faCheck {
+  padding: 15px;
+  border-radius: 100px;
+  background-color: chartreuse;
+  margin-left: 10px;
+}
+.toast-btn {
+  margin-top: 50px;
+}
+.toast-btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.toast-content {
+  margin-top: 20px;
+}
+.toast-btn button:hover {
+  box-shadow: 0 0 5px green;
+}
+.toast {
+  min-width: 500px;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 5px solid #3fd35d;
+  background: #fff;
+  border-radius: 2px;
+  padding: 10px 0;
+  box-shadow: 0px 0px 10px #ccc;
+  /* animation: slideInLeft ease 0.5s, fadeOut linear 1s 3s forwards; */
+  /* chữ forwards sau cùng tránh lặp lại từ đầu animation  */
+  transition: all linear 0.3s;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+#toast {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.toast + .toast {
+  margin-top: 15px;
+}
+.toast__icon {
+  width: 15px;
+  height: 15px;
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #3fd35d;
+}
+.toast__icon,
+.toast__close {
+  margin: 16px 16px;
+}
+.toast__content {
+  flex-grow: 1;
+  line-height: 22px;
+}
+.toast__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.toast__text {
+  color: #ccc;
+  font-size: 15px;
+}
+.toast__close i {
+  color: #ccc;
+  cursor: pointer;
+}
+i:hover {
+  color: black;
+}

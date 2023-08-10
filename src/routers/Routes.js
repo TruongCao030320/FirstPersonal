@@ -6,6 +6,8 @@ import Home from "../pages/Home";
 import BigCart from "../components/bigcart/BigCart";
 import Contact from "../components/contact/Contact";
 import Login from "../pages/Login";
+import Paying from "../pages/Paying";
+import Toast from "../components/toast/Toast";
 const router = () => {
   return (
     <Routes>
@@ -14,6 +16,7 @@ const router = () => {
       <Route path="cart" element={<BigCart />} />
       <Route path="contact" element={<Contact />} />
       <Route path="login" element={<Login />} />
+      <Route path="paying" element={<Paying />} />
     </Routes>
   );
 };
