@@ -2,17 +2,24 @@ import React, { useEffect, useState } from "react";
 import "../toast/Toast.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
+import { toggleToast } from "../../store/toastToggleSlice";
 const Toast = () => {
+  const dispatch = useDispatch();
   useEffect(() => {
     const toast = document.getElementById("toast-wrapper");
     console.log("toast làsssss", toast);
     const child = document.getElementById("toast1");
     let removeToast = setTimeout(() => {
-      if (child && child.parentElement === toast) toast.removeChild(child);
+      if (child && child.parentElement === toast) {
+        toast.removeChild(child);
+        dispatch(toggleToast());
+      }
     }, 4000);
     const deleteToast = () => {
       toast.removeChild(child);
       clearTimeout(removeToast);
+      dispatch(toggleToast());
     };
 
     // Attach an event listener to a button (or other element) to trigger the deleteToast function

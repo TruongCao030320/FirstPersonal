@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import "../styles/Paying.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Toast from "../components/toast/Toast";
 import { Link } from "react-router-dom";
-
+import { toggleToast } from "../store/toastToggleSlice";
 const Paying = () => {
   const products = useSelector((state) => state.shopping.item);
   const amounts = useSelector((state) => state.shopping.totalAmount);
+  const temp = useSelector((state) => state.toast.toggle);
+  const [toast, setToast] = useState(temp);
+  const toggle = () => {
+    console.log("vao2 d9c ham toggle", temp);
+    dispatch(toggleToast());
+  };
+  const dispatch = useDispatch();
 
   return (
     <div className="container">
-      <div id="toast"></div>
+      {temp && <Toast />}
       <div className="paying">
         <div className="paying-infor">
           <div className="infor-form">
@@ -38,9 +45,9 @@ const Paying = () => {
             </div>
           </div>
           <div className="infor-btn">
-            <button>
-              <Link to="/">Buy</Link>
-            </button>
+            <Link to="/">
+              <button onClick={() => toggle()}>Buy</button>
+            </Link>
           </div>
         </div>
         <div className="paying-cost">

@@ -14,7 +14,6 @@ import { useDispatch } from "react-redux";
 import { toggleMiniCart } from "../../store/cartSlice";
 import { toggleNavbarMobile } from "../../store/mobileSlice";
 import { useSelector } from "react-redux";
-import { Toast } from "react-bootstrap";
 const Header = () => {
   const array = [
     {

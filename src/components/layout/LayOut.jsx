@@ -22,7 +22,7 @@ const LayOut = () => {
     // onClick={handleToggleCart}
     >
       <div className={toggle ? "overlay" : ""} onClick={handleToggleCart}></div>
-      <Toast />
+      {/* <Toast /> */}
       <Header />
       <Routes />
       <Footer />
